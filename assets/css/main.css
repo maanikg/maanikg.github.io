@@ -3279,11 +3279,11 @@ button:disabled,
 }
 
 #header .logo:hover strong {
-	background-color: #9bf1ff;
+	background-color: #626ba8;
 }
 
 #header .logo:active strong {
-	background-color: #53e3fb;
+	background-color: transparent;
 }
 
 #header nav {
@@ -4091,13 +4091,6 @@ body.is-menu-visible #menu .inner {
 	transform: none;
 	opacity: 1;
 	visibility: visible;
-}
-
-#banner .inner {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
 }
 
 #banner .column {
