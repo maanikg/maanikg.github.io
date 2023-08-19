@@ -65,13 +65,17 @@
 					<header class="major">
 						<h2>Designing a Motor Controller</h2>
 					</header>
-					<p>As part of UTSM's Prototype Powertrain team, I'm currently implementing the motor
-						controller unit for the Prototype car which will compete in the 2024 Shell Eco-Marathon Americas
-						Competition. The design for this car's motor controller is entirely new because it will fit in
-						the team's first fully electric car. Due to competition regulations, the motor control unit must
+					<p>As part of UTSM's Prototype Powertrain team, I'm currently implementing a <t
+							style="font-weight: bold;"> 22V motor controller unit </t>for the Prototype car which
+						will
+						compete in the 2024 Shell Eco-Marathon Americas
+						Competition. The design for this car's motor controller is entirely new because it will fit
+						in
+						the team's first fully electric car. Due to competition regulations, the motor control unit
+						must
 						be fully self-designed.
 					</p>
-					<p>Working alongside <a href="https://www.linkedin.com/in/andrew-radke-63a452242/">Andrew
+					<p>Collaborating alongside <a href="https://www.linkedin.com/in/andrew-radke-63a452242/">Andrew
 							Radke</a> and <a href="https://www.linkedin.com/in/mayaediemaxsom/">Maya Edie-Maxsom </a> in
 						the Prototype Powertrain team.
 					</p>
@@ -89,12 +93,12 @@
 							<header class="major">
 								<h3>Layout planning</h3>
 							</header>
-							<p>In the inital planning stages, we used a previous iteration of the motor controller PCB
+							<p>In the inital planning stages, a previous iteration of the motor controller PCB was used
 								to
 								create a model for how our motor controller would work. The choice to use a PCB was made
 								on the basis that the system needed to be small to fit inside a one-passenger racecar,
 								and because it would be able to supply high power. Using a combination of encoders,
-								drivers, an Arduino microcontroller, and other components, we started our motor
+								drivers, an Arduino microcontroller, and other components, I started work on the motor
 								controller by designing the PCB layout using <t style="font-weight: bold;">Altium
 									Designer</t>.</p>
 						</div>
@@ -111,7 +115,12 @@
 							</header>
 							<p>A big challenge when planning our PCB design was ensuring that it could actually be
 								ordered (ie. the components were available). When transitioning from the initial layout
-								design to the PCB schematic and planning </p>
+								design to the PCB schematic and planning, we had to translate the generic components
+								(ex. diode) to actual part numbers that could be readily sourced. Furthermore, it was
+								important to ensure our design cost much less than the <t style="font-weight: bold;">
+									$500 budget </t> provisioned for the
+								Prototype Powertrain divison if we needed multiple design iterations.
+							</p>
 						</div>
 					</div>
 				</section>
@@ -124,10 +133,15 @@
 							<header class="major">
 								<h3>Redesign of PCB</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>As we further progressed with the design of the PCB, we realized that with the high
+								voltage that we were dealing with (as high as 44V at times), the components we were
+								using would not be able to sustain such high voltage. The decision was taken to split
+								the PCB into 2 main sections: one responsible for power conversion (which would handle
+								the high voltage) and the other part which would contain the rest of the components.
+								This would streamline the design process and allow for the isolation of issues during
+								testing. </p>
+							<p>At the moment, the design of the 2 PCB sections is complete, and we are in the process of
+								ordering them.</p>
 						</div>
 					</div>
 				</section>
@@ -140,9 +154,9 @@
 						<h2>Future Design Steps</h2>
 					</header>
 					<p>With the PCB designs nearly complete, the team will order the completed PCBs in the next few
-						weeks. In the meantime, I will implement the C code that is need to control the decoders and
-						drivers via the
-						Arduino microcontroller. After the PCBs have arrived, the priority is to ensure that our
+						weeks. In the meantime, I will implement the C code that is need to control the 3 phases of
+						encoders and drivers via the Arduino microcontroller. After the PCBs have arrived, the priority
+						is to ensure that our
 						current design works with the rest
 						of the electrical system and diagnose any weaknesses or issues with the rest of the Prototype
 						team.</p>
