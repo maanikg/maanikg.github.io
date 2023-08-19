@@ -263,6 +263,11 @@ a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	border-bottom-color: transparent;
+	color: #000000 !important;
+}
+
 a:hover {
 	border-bottom-color: transparent;
 	color: #9bf1ff !important;

@@ -26,37 +26,32 @@
 		<header id="header" class="alt style1">
 			<a href="index.html" class="logo"><strong>Maanik Gogna</strong></a>
 			<nav>
-				<a href="#menu">Menu</a>
+				<a href="#wrapper">Motor Controller</a>
 			</nav>
 		</header>
 
 		<!-- Menu -->
-		<nav id="menu">
+		<!-- <nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="landing.html">Landing</a></li>
 				<li><a href="generic.html">Generic</a></li>
 				<li><a href="elements.html">Elements</a></li>
 			</ul>
-			<!-- <ul class="actions stacked">
-				<li><a href="#" class="button primary fit">Get Started</a></li>
-				<li><a href="#" class="button fit">Log In</a></li>
-			</ul> -->
-		</nav>
+		</nav> -->
 
 		<!-- Banner -->
 		<!-- Note: The "styleN" class below should match that of the header element. -->
 		<section id="banner" class="style1">
 			<div class="inner">
 				<span class="image">
-					<img src="images/pic07.jpg" alt="" />
+					<img src="images/pcbDesign.png" alt="" />
 				</span>
 				<header class="major">
 					<h1>Motor Controller</h1>
 				</header>
 				<div class="content">
-					<p>Lorem ipsum dolor sit amet nullam consequat<br />
-						sed veroeros. tempus adipiscing nulla.</p>
+					<p>University of Toronto Supermileage Team (UTSM) - Prototype Powertrain</p>
 				</div>
 			</div>
 		</section>
@@ -68,72 +63,71 @@
 			<section id="one">
 				<div class="inner">
 					<header class="major">
-						<h2>Sed amet aliquam</h2>
+						<h2>Designing a Motor Controller</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-						condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem
-						ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et
-						orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-						efficitur ligula tate urna.</p>
+					<p>As part of UTSM's Prototype Powertrain team, I'm currently implementing the motor
+						controller unit for the Prototype car which will compete in the 2024 Shell Eco-Marathon Americas
+						Competition. The design for this car's motor controller is entirely new because it will fit in
+						the team's first fully electric car. Due to competition regulations, the motor control unit must
+						be fully self-designed.
+					</p>
+					<p>Working alongside <a href="https://www.linkedin.com/in/andrew-radke-63a452242/">Andrew
+							Radke</a> and <a href="https://www.linkedin.com/in/mayaediemaxsom/">Maya Edie-Maxsom </a> in
+						the Prototype Powertrain team.
+					</p>
 				</div>
 			</section>
 
 			<!-- Two -->
 			<section id="two" class="spotlights">
 				<section>
-					<a href="generic.html" class="image">
-						<img src="images/pic08.jpg" alt="" data-position="center center" />
-					</a>
+					<span class="image">
+						<img src="images/pcbDesign.png" alt="" data-position="center center" />
+					</span>
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Orci maecenas</h3>
+								<h3>Layout planning</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							<p>In the inital planning stages, we used a previous iteration of the motor controller PCB
+								to
+								create a model for how our motor controller would work. The choice to use a PCB was made
+								on the basis that the system needed to be small to fit inside a one-passenger racecar,
+								and because it would be able to supply high power. Using a combination of encoders,
+								drivers, an Arduino microcontroller, and other components, we started our motor
+								controller by designing the PCB layout using <t style="font-weight: bold;">Altium
+									Designer</t>.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span class="image">
+						<img src="images/pcb_arduino1.png" alt="" data-position="center center" />
+					</span>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Material Sourcing</h3>
+							</header>
+							<p>A big challenge when planning our PCB design was ensuring that it could actually be
+								ordered (ie. the components were available). When transitioning from the initial layout
+								design to the PCB schematic and planning </p>
 						</div>
 					</div>
 				</section>
 				<section>
 					<a href="generic.html" class="image">
-						<img src="images/pic09.jpg" alt="" data-position="top center" />
+						<img src="images/pcb.png" alt="" data-position="25% 25%" />
 					</a>
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Rhoncus magna</h3>
+								<h3>Redesign of PCB</h3>
 							</header>
 							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
 								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
 								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
 								sagittis tempus.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<section>
-					<a href="generic.html" class="image">
-						<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
-					</a>
-					<div class="content">
-						<div class="inner">
-							<header class="major">
-								<h3>Sed nunc ligula</h3>
-							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
 						</div>
 					</div>
 				</section>
@@ -143,16 +137,18 @@
 			<section id="three">
 				<div class="inner">
 					<header class="major">
-						<h2>Massa libero</h2>
+						<h2>Future Design Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
-					<ul class="actions">
+					<p>With the PCB designs nearly complete, the team will order the completed PCBs in the next few
+						weeks. In the meantime, I will implement the C code that is need to control the decoders and
+						drivers via the
+						Arduino microcontroller. After the PCBs have arrived, the priority is to ensure that our
+						current design works with the rest
+						of the electrical system and diagnose any weaknesses or issues with the rest of the Prototype
+						team.</p>
+					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</section>
 
