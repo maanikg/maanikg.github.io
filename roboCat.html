@@ -55,7 +55,7 @@
 					<h1>roboCat</h1>
 				</header>
 				<div class="content">
-					<p>An autonomous pet companion integrating multiple <br> simultaneous self-made distracting devices
+					<p>An autonomous pet companion integrating <br> multiple self-made distracting devices
 					</p>
 				</div>
 			</div>
@@ -70,11 +70,21 @@
 					<header class="major">
 						<h2>Not your ordinary cat</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-						condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem
-						ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et
-						orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-						efficitur ligula tate urna.
+					<p>roboCat was made during the MakeUofT 2023 hackathon - a 24-hour hackathon centered around
+						hardware and
+						physical projects. The hackathon theme we decided to follow for our project was 'useless
+						inventions'.
+						<br><br>
+						When brainstorming, we decided that making an imitation of a pet would allow for a lot of
+						creativity in terms of what features we could add. We ultimately decided to make an autonomous
+						pet
+						distracter. For the hardware aspect, we decided to use
+						Arduino as the central controller of the project as the software to run the Arduino was fairly
+						simple.
+						<br><br>
+						This project was created in collaboration with <a
+							href="https://www.linkedin.com/in/tyler--yan/">Tyler Yan</a> and two other hackathon team
+						members.
 						<br><br>
 						Tech Stack:<br>
 						<img src="https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white"
@@ -94,12 +104,21 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Orci maecenas</h3>
+								<h3>Feature Planning</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>A large amount of time went into what we believed was possible to create with Arduino and
+								whether we could physically manifest these ideas in a short amount of time given the
+								materials we had. By evaluating the materials we had available, we eventually decided on
+								these core functions that would serve as distractions:
+							<ul>
+								<li>A wheel base with sensors to perform autonomous movement on land (avoiding
+									obstacles)</li>
+								<li>A laser 'eye' that would move at random</li>
+								<li>A speaker that would emit 'meow'-like sounds</li>
+								<li>A wagging tail</li>
+								<li>An LED display showing various messages</li>
+							</ul>
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -113,12 +132,20 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Rhoncus magna</h3>
+								<h3>A base to work from</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>I spent the majority of the time working on the physical structure and the autonomous
+								driving. A big challenge was making a structure that could house all the hardware and
+								electrical components while still keeping the core functionality in the right places of
+								the 'cat'. Additionally, we had to balance weight with sturdiness - the more components
+								we added, the less maneuverable it would be. <br><br>
+								For the autonomous driving, we used an ultrasonic sensor (seen at the bottom of the
+								right image). We used a TT motor to constantly drive and supply power to both rear
+								wheels, and cut off power to one of the wheels when we detected there was an obstacle
+								using the sensor. Due to a lack of materials, we only had one ultrasonic sensor, one TT
+								motor, and two large wheels which could connect to the motor,so we decided to only allow
+								forward motion using rear-wheel drive.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -135,12 +162,21 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Sed nunc ligula</h3>
+								<h3>A cat in motion</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>The assembly of the 'cat' was not difficult, but due to the aforementioned lack of
+								materials in terms of the wheels, motor, and sensors, we faced difficulties with the
+								autonomous driving aspect of the project. Because we only had one motor, as we added
+								more mass to the top of the physical structure, the wheels struggled to turn due to the
+								weight from above. When all components were added, our motor was only able to overcome
+								kinetic friction but could not overcome static friction, leading to the phenomenom where
+								our project could not start moving from standstill, but once moving it could stay moving
+								for a while. <br><br>
+								Regardless, the autonomous driving aspect worked in the sense that it would drive and
+								avoid obstacles if there were any detected. The fully finished roboCat project with all
+								active components (driving, laser eye, wagging tail, sound noises, and LED display)
+								can be seen in the video to the left.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -155,11 +191,16 @@
 					<header class="major">
 						<h2>Future Development Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
+					<p>While we did the best with the materials we had regarding the driving aspect, the physical
+						structure could have been improved by streamlining the different aspects of our project
+						together. During development, we used one Arduino for either one or two abilities (driving,
+						sounds, laser, etc.), and as a result, the wiring and circuitry was needlessly complex. This
+						also may have contributed to an increased weight when, if everything was planned meticulously
+						from the start, we could have ommitted one or two Arduino boards to reduce weight. If the
+						project
+						had to
+						be made again, I would probably put a greater focus on the Arduino connections to reduce
+						redundancies in hardware and improve the physical structure and driving as a whole.</p>
 					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
 					</ul> -->
