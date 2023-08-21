@@ -70,11 +70,30 @@
 					<header class="major">
 						<h2>A real-time speech teacher</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-						condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem
-						ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et
-						orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-						efficitur ligula tate urna.</p>
+					<p>With various front-end projects under my belt, I wanted to try my hand at mobile development.
+						Additonally, <a href="thermaSave.html"> thermaSave</a> had piqued my interest in machine
+						learning, and I wanted to dive deeper into the application of machine learning models.<br>
+						Speech is something that has many attributes that can be measured and quantified such as tone,
+						volume, speed, etc., and I was
+						interested in seeing if I could build machine learning models on my own that could analyze
+						speech and provide feedback based on those models. Thus, the idea for helloMilo was born.
+						<br>(The name for helloMilo comes from 'hello' and 'Milo' - derived from the Greek word 'μιλώ'
+						or
+						'miló', which means to speak.)
+						<br><br>
+						Collaborated alongside <a href="https://www.linkedin.com/in/tyler--yan/">Tyler Yan</a> and <a
+							href="https://www.linkedin.com/in/ahmet-utku-hamamcioglu-098815230/">Ahmet Hamamcioglu</a>.
+						<br><br>
+						Tech Stack:<br>
+						<img src="https://img.shields.io/badge/Swift-F05138?style=flat&logo=swift&logoColor=white"
+							height="30" alt="Swift" /> <img
+							src="https://img.shields.io/badge/-SwiftUI-001b96?style=flat&logo=swift&logoColor=white"
+							height="30" alt="SwiftUI" />
+						<img src="https://img.shields.io/badge/-CoreML-026998?style=flat&logo=apple&logoColor=white"
+							height="30" alt="CoreML" />
+						<img src="https://img.shields.io/badge/-Firebase-f58411?style=flat&logo=firebase&logoColor=FFCA28"
+							height="30" alt="Firebase" />
+					</p>
 				</div>
 			</section>
 
@@ -87,12 +106,16 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Orci maecenas</h3>
+								<h3>Navigating a maze</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>Since it was our first time undertaking a major mobile app project, we started desiging
+								the layout of the app (ie. how the pages would connect to each other, and where
+								information needed to be shared). Since I was working with a language and framework I
+								had never used before (Swift and SwiftUI), it took time to get up to speed with the
+								development of the app.<br><br>
+								The image to the left shows the initial layout of the app, and how the pages would
+								connect with each other. For instance, the recording and scores screen can be seen.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -106,12 +129,19 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Rhoncus magna</h3>
+								<h3>Training models</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>The bulk of the project hinged on getting machine learning models to accurately detect
+								different attributes of speech. I found that there were not many
+								machine learning models already available suited for speech attributes we were
+								looking for.
+								However, through Apple's machine learning development platform <t
+									style="font-weight: bold;">CreateML</t>, I was able to feed audio clips of various
+								categories in order to train and create machine learning models. This became the
+								backbone of how we would detect the quality of speech attributes such as tone, volume,
+								speed, etc. Seen right is a audio classification model being created and trained using
+								CreateML.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -125,12 +155,19 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Sed nunc ligula</h3>
+								<h3>Models to Feedback</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>Once the models were created and their accuracy verified, the task was to apply the
+								models to the user's speech in real-time. The analysis worked by taking 5 second clips
+								at a time every 2.5 seconds, and applying the model to predict the estimated
+								quality of speech; this process allowed for a seamless analysis of the entire audio.
+								Furthermore, even though the models didn't fully know what speech was and couldn't
+								identify the words themselves, by taking short clips at a time, they could pick up on
+								general trends in tone, speed, volume, etc.<br><br>
+								Through this process, we were able to quantitatively analyze the user's speech and give
+								feedback based on the quality of speech recorded. Seen right is an example of the early
+								stages of the scoring system, with more monotone speech being scored lower.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -145,11 +182,17 @@
 					<header class="major">
 						<h2>Future Development Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
+					<p>While the process of creating models and using them to provide feedback was quite
+						straightforward, the actual formation of the models was very time-intensive because a variety of
+						clips were needed for each speech attribute. For the tone audio classifier model alone, more
+						than 60 audio clips were used. Since there is no central database for these audio clips
+						categorized by the quality of speech, many clips are simply found by looking at various videos
+						through trial and error. As a result, not all speech attribute models have been fully completed.
+						The main priority in the future is to completely finish the remaining models.<br><br>
+						In addition, saving user information in the cloud would enable for more personalized feedback
+						based on prior recordings. This would be a great way to track progress and provide more accurate
+						feedback.
+					</p>
 					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
 					</ul> -->
