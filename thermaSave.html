@@ -70,11 +70,21 @@
 					<header class="major">
 						<h2>Reducing energy usage in advance</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-						condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem
-						ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et
-						orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-						efficitur ligula tate urna.
+					<p>ThermaSave was a project created during the HackTheMIST 2023 12-hour hackathon. The goal of the
+						hackathon was to make a project with a machine learning focus. <br><br>
+						When planning our project, we knew that in order to utilize machine learning, we
+						needed a foundation of data from which to work and make inferences. Inspired by the recent
+						increase in the cost of living and intrigued by how temperature affected energy usage,
+						we decided to create an app that would help Toronto residents reduce their energy usage and save
+						money. By looking at Toronto temperatures and energy usage data in the past, we could make
+						models to identify a correlation between the two datasets and use that to predict future
+						temperatures and provide energy
+						usage recommendations. <br><br>
+						This project was created in collaboration with <a
+							href="https://www.linkedin.com/in/tyler--yan/">Tyler Yan</a>, <a
+							href="https://www.linkedin.com/in/ahmet-utku-hamamcioglu-098815230/">Ahmet Hamamcioglu</a>,
+						and
+						and <a href="https://www.linkedin.com/in/owen-ristic/">Owen Ristic</a>.
 						<br><br>
 						Tech Stack: <br>
 						<img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffdd55"
@@ -99,12 +109,13 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Orci maecenas</h3>
+								<h3>Data Collection</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>To create an accurate model that would make predictions years in advance, we needed
+								decades of temperature and energy usage data so that our model's predictions would not
+								be biased towards recent events. For this reason, we took publically available Toronto
+								temperature and energy usage data for the past 30 years. Seen left is an excerpt of the
+								Toronto weather data that we used to train our model.</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -113,17 +124,23 @@
 				</section>
 				<section>
 					<span class="image">
-						<img src="images/index/thermaSave_code.jpeg" alt="" data-position="center center" />
+						<img src="images/thermaSave/thermaSave_codeLarge.png" alt="" data-position="center center" />
 					</span>
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Rhoncus magna</h3>
+								<h3>Creating the model</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>Given the short timeline and the lack of experience we had with machine learning, we
+								decided we would use Python to build our app, given its plethora of
+								machine learning and data cleaning libraries. Through some research, we identified <t
+									style="font-weight: bold;">
+									Random Forest Regression</t>, a supervised learning method, as our model of choice.
+								Random Forest Regression works by creating multiple decision trees and outputting the
+								average prediction of the individual trees. Since we were working with data many years
+								in the past, having many predictions averaged out would, in our minds, have avoided
+								reliance on any outliers in the data. <br><br>
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -137,12 +154,14 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Sed nunc ligula</h3>
+								<h3>A simple user interface</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>To complete our project, we decided to make a simple user interface allowing the user to
+								select a range of dates; the program in return would output the suggested energy usage
+								for that time period and provide recommendations on how to achieve those energy usage
+								levels. Due to the time constraint of the hackathon, we were unable to spend a lot of
+								time on this aspect as we focused most of our efforts on data collection and the
+								formation of our machine learning models.</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -157,11 +176,13 @@
 					<header class="major">
 						<h2>Future Development Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
+					<p>Through thermaSave and the HackTheMIST hackathon, we gained an insight into machine learning
+						models and how they formulate predictions given a dataset. However, due to the
+						12-hour time limit, we were unable to fully refine our model. The app could be improved by
+						incorporating additional variables such as location (ie. a building's proximity to water bodies)
+						in an effort
+						to improve our model's predictions. Furthermore, the user interface could be improved to provide
+						a better experience when using the app. </p>
 					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
 					</ul> -->
