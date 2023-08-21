@@ -70,11 +70,23 @@
 					<header class="major">
 						<h2>Let the app find roommates for you</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-						condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem
-						ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et
-						orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-						efficitur ligula tate urna.
+					<p>roomMate was created as part of UofTHacks X 36-hour hackathon hosted in 2023. It was an
+						open-ended hackathon with the general theme being 'exploration'. Check out the <a
+							href="https://devpost.com/software/roommate-w51k46"> Devpost hackathon
+							submission link </a> and the <a href="https://github.com/maanikg/RoomMateUofT">source
+							code</a> for the project.
+						<br><br>
+						Since we were all second year students at the time and most of us had experience with finding
+						roommates, we decided to make an app that would simplify the process and make the user
+						experience for finding a roommate more enjoyable. In addition, we wanted to try front-end
+						development and to incorporate machine learning or artificial intelligence if possible because
+						it
+						was one of our first hackathons and we wanted to learn as much as possible.
+						<br><br>
+						This project was completed in collaboration with <a
+							href="https://www.linkedin.com/in/tyler--yan/">Tyler Yan</a>, <a
+							href="https://www.linkedin.com/in/chengkai-matt-xue-590664230/">Matt Xue</a>, and one other
+						hackathon team member.
 						<br><br>
 						Tech Stack: <br>
 						<img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffdd55"
@@ -104,12 +116,11 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Orci maecenas</h3>
+								<h3>Starting from home</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>We started our project by getting familiar with the development platform ReactJS and
+								setting up a template for our web app. This allowed us to get our feet wet and establish
+								a foundation from which to build off of.</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -123,12 +134,14 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Rhoncus magna</h3>
+								<h3>Personalized recommendations</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>
+								While front end development continued, I worked on the personalization algorithm. Using
+								Python and pandas to simplify data for user criteria, we made an algorithm that would
+								determine the compatibility between any 2 users. Using these results, we would determine
+								which users were recommended as roommates.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -142,12 +155,12 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Sed nunc ligula</h3>
+								<h3>Real-time chatting</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>An integral part of the application was a built-in chat functionality. We established a
+								user database with MongoDB to persist users' critera and their recommended users even
+								after they logged off, and used PyMongo and Flask to connect the Python program to the
+								database and frontend respectively.</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -162,11 +175,11 @@
 					<header class="major">
 						<h2>Future Development Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
+					<p>Due to the fact that we had not used any of the technologies before in any capacity, it took some
+						time to start developing the program in earnest, and this limited the functionality of the
+						project. Regardless, further additions to the program could entail an enhanced user experience
+						with a group chat functionality, and a refined personalization algorithm that doesn't require
+						manual variables and instead implements machine learning. </p>
 					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
 					</ul> -->
