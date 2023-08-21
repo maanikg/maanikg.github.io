@@ -116,10 +116,19 @@
 							<header class="major">
 								<h3>Info Gathering and Data Cleaning</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>A big part of the project consisted of getting the required infomation from various
+								sources. There was no central database to find cheapest flights, things to do, and
+								hotels all in one place, so I spent some time identifying APIs that could be readily
+								integrated into the program. Preferably, I tried to use APIs that had a free tier and
+								would allow for many API calls to ensure an unhindered testing process. <br><br>
+
+								APIs of notable mention include the Lufthansa API and Amadeus API which I used
+								collectively to find flights, the Google Places API to find attractions and hotels, and
+								the
+								Google Maps API to visually display all of the above. Seen right is an example of a
+								Google Places API call in the browser environment.
+
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -135,10 +144,18 @@
 							<header class="major">
 								<h3>Flask and Servers</h3>
 							</header>
-							<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus
-								condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna
-								pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-								sagittis tempus.</p>
+							<p>Once I identified a list of attractions, I needed to find a way to intelligently organize
+								them so that on a particular day, a tourist wouldnt be travelling to opposite ends of
+								the city to complete their itinerary. <br><br>
+								<t style="font-weight: bold;">K-means grouping
+								</t> is a method of machine learning
+								(unsupervised learning) which groups points into clusters. I implemented k-means
+								grouping using
+								PyTorch in a Python app, and by connecting the ReactJS frontend with the
+								Python app
+								using Flask, I was able to quickly group the attractions and display them on the map.
+								Seen left is an example of two clusters of attractions.
+							</p>
 							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul> -->
@@ -153,11 +170,17 @@
 					<header class="major">
 						<h2>Future Development Steps</h2>
 					</header>
-					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
-						magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
-						Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-						consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-						amet pharetra et feugiat tempus.</p>
+					<p>With the k-means grouping complete, I simply need to find a way to schedule events throughout the
+						day and display the itinerary in user-friendly format. Since I have already incorporated the
+						database into the program, this information will persist in the program even if the user logs
+						out. <br>
+						I am currently working on hosting the app using Firebase Hosting, but with the inclusion of
+						the Python Flask server, I have to revisit my plan for how to host both the frontend ReactJS and
+						the Flask app together. <br>
+						Other than these core features, the rest of the development will focus on improving the
+						program's UI and
+						user's overall experience.
+					</p>
 					<!-- <ul class="actions">
 						<li><a href="generic.html" class="button next">Get Started</a></li>
 					</ul> -->
@@ -177,12 +200,12 @@
 						<a href="mailto:maanik.gogna@mail.utoronto.ca">maanik.gogna@mail.utoronto.ca</a>
 					</div>
 					<div>
-						<i class="icon brands fa-github"></i>
-						<a href="https://github.com/maanikg">github.com/maanikg</a>
-					</div>
-					<div>
 						<i class="icon brands fa-linkedin-in"></i>
 						<a href="https://linkedin.com/in/maanikgogna">linkedin.com/in/maanikgogna</a>
+					</div>
+					<div>
+						<i class="icon brands fa-github"></i>
+						<a href="https://github.com/maanikg">github.com/maanikg</a>
 					</div>
 				</header>
 				<footer id="footer">
