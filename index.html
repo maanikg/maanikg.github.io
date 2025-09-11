@@ -23,7 +23,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>Maanik Gogna</strong></a>
+			<a href="index.html" class="logo"><strong>Home</strong></a>
 			<nav>
 				<a href="https://github.com/maanikg">
 					<i class="icon brands fa-github"></i>
@@ -33,7 +33,7 @@
 		</header>
 
 		<!-- Banner -->
-		<section id="banner" class="major">
+		<section id="banner" class="major" style="min-height: 100vh; display: flex; align-items: center;">
 			<div class="inner" style="display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -44,10 +44,11 @@
 					</header>
 					<div class="content">
 						<p style="font-size: 1em;letter-spacing: normal;
-						">I'm a 3rd year Computer Engineering student at the
+						">I'm a 4th year Computer Engineering student at the
 							University of Toronto. <br>
 							I'm very passionate about computer technology and programming, and I love using computers to
-							solve problems. Whether I'm making autonomous robots or training machine learning models,
+							solve problems. Whether I'm making augmented reality glasses or training machine learning
+							models,
 							I'm constantly exploring the field of computers. My many projects in the field made me
 							realize that I love working with computers, whether its related to hardware, software, or
 							something in
@@ -56,27 +57,73 @@
 							I'm constantly looking to learn new things in the field! Check out some of my work here.
 						</p>
 					</div>
+					<div style="margin: 2em 0; display: flex; gap: 1em; flex-wrap: wrap;">
+						<a href="#work" class="button">Work Experience</a>
+						<a href="#main" class="button">Project Portfolio</a>
+						<a href="resume.html" class="button">Resume</a>
+						<a href="#contact" class="button primary">Contact Me</a>
+					</div>
 				</div>
 				<div class="column" style="flex: 1;">
-					<img src="images/index/photoCropped.JPG" alt="Maanik Gogna" />
+					<img src="images/index/MG_crop.jpeg" alt="Maanik Gogna" />
 				</div>
+			</div>
+		</section>
+		<!-- Internship Section -->
+		<section id="work"
+			style="margin-bottom:2em; background:rgba(155,241,255,0.12); border:2px solid #9bf1ff; border-radius:1em; padding:2em 1em;">
+			<!-- ÷</section> -->
+			<div class="inner">
+				<header class="major">
+					<h2>Professional Experience</h2>
+				</header>
+				<p>
+
+					<strong>Silicon Validation Intern, Alphawave SEMI (acquired by Qualcomm)</strong><br>
+					May 2024 - August 2025<br>
+				<ul>
+
+					<li>Managed multi-project regression flows and improved bit error rate (BER) by 2-3 orders of
+						magnitude on critically affected projects through iterative research and analysis, ensuring
+						customer and industry compliance</li>
+					<li>Collaborated with a team of senior engineers to validate 5 silicon projects, improving
+						transmitter eye jitter and BER performance across multiple data rates and test conditions for
+						PCIe and Ethernet standards</li>
+					<li>Redesigned the PCIe Interoperability testing infrastructure, enabling integration into the main
+						software environment for automated, scalable testing</li>
+					<li>Increased test coverage by 20% by developing new test cases targeting silicon weak points and
+						edge cases</li>
+					<li>Improved manual validation processing time by 25% through the development of automated data
+						processing tools, featuring an integrated back-end query service and front-end user interface
+					</li>
+				</ul>
+				</p>
 			</div>
 		</section>
 
 		<!-- Main -->
 		<div id="main">
 
+
 			<!-- One -->
 			<section id="one" class="tiles">
 				<article>
+					<!-- <span class="image">
+							<img src="images/index/pcbDesign.png" alt="" />
+						</span> -->
+					<header class="major">
+						<h3><a href="telemetry.html" class="link">Hydrogen Telemetry System </a></h3>
+						<p>UofT Supermileage - Urban Concept <br>
+						</p>
+					</header>
+				</article>
+				<article>
 					<span class="image">
-						<img src="images/index/pcbDesign.png" alt="" />
+						<img src="images/index/roomMate_homepage.png" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="motorController.html" class="link">Motor Controller Design</a></h3>
-						<p>University of Toronto Supermileage <br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">The self-made
-								brains of a car</t>
+						<h3><a href="roomMate.html" class="link">roomMate</a></h3>
+						<p>Full Stack Roommate Matchmaking App<br>
 						</p>
 					</header>
 				</article>
@@ -87,9 +134,36 @@
 					<header class="major">
 						<h3><a href="vacayAway.html" class="link">VacayAway</a></h3>
 						<p>Full Stack Trip Planner<br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">Flights? Hotels?
-								Attractions? All
-								here, in one app</t>
+						</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/index/roboCat_clear.png" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="roboCat.html" class="link">roboCat</a></h3>
+						<p>Autonomous Robotic Pet<br>
+						</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/index/pcbDesign.png" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="motorController.html" class="link">Motor Controller Design</a></h3>
+						<p>UofT Supermileage - Prototype<br>
+						</p>
+					</header>
+				</article>
+				<article>
+					<!-- <span class="image">
+						<img src="images/index/pcbDesign.png" alt="" />
+					</span> -->
+					<header class="major">
+						<h3><a href="safeStride.html" class="link">safeStride</a></h3>
+						<p>mobility aid app <br>
 						</p>
 					</header>
 				</article>
@@ -101,8 +175,6 @@
 					<header class="major">
 						<h3><a href="helloMilo.html" class="link">helloMilo</a></h3>
 						<p>Speech Improvement App<br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">A real-time
-								speech teacher</t>
 						</p>
 					</header>
 				</article>
@@ -113,32 +185,16 @@
 					<header class="major">
 						<h3><a href="thermaSave.html" class="link">thermaSave</a></h3>
 						<p>Energy Management App<br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">Reducing energy
-								usage in advance</t>
 						</p>
 					</header>
 				</article>
 				<article>
 					<span class="image">
-						<img src="images/index/roboCat_clear.png" alt="" />
+						<img src="images/index/thermaSave_code.jpeg" alt="" />
 					</span>
 					<header class="major">
-						<h3><a href="roboCat.html" class="link">roboCat</a></h3>
-						<p>Autonomous Robotic Pet<br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">Not your
-								ordinary cat</t>
-						</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/index/roomMate_homepage.png" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="roomMate.html" class="link">roomMate</a></h3>
-						<p>Full Stack Roommate Matchmaking App<br>
-							<t style="font-weight: normal;text-transform: lowercase;font-size: larger;">Let the app find
-								roommates for you</t>
+						<h3><a href="aslingo.html" class="link">ASLingo</a></h3>
+						<p>sign language learning app<br>
 						</p>
 					</header>
 				</article>
@@ -146,12 +202,14 @@
 
 			<!-- Contact -->
 			<div class="inner">
-				<header class="major">
+				<header class="major" id="contact">
 					<h3>Contact Info</h3>
 				</header>
 				<div class="content">
-					<p>If you would like access to my resume, feel free to connect with me and I would be happy to
-						share my most up-to-date resume!</p>
+					<div>
+						<!-- <i class="fas fa-phone"></i> -->
+						<a href="resume.html">Resume</a>
+					</div>
 					<div>
 						<i class="fas fa-phone"></i>
 						<t>+1 (437)-246-2823</t>
