@@ -2877,9 +2877,12 @@ button:disabled,
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: default;
-	height: 40vh;
+	/* height: 40vh;
 	max-height: 40em;
-	min-height: 23em;
+	min-height: 23em; */
+	height: 30vh;
+	max-height: 30em;
+	min-height: 16.5em;
 	overflow: hidden;
 	position: relative;
 	width: 40%;
@@ -2911,6 +2914,7 @@ button:disabled,
 	width: 100%;
 	z-index: 4;
 }
+
 
 .tiles article:before {
 	-moz-transition: opacity 0.5s ease;
@@ -2956,14 +2960,10 @@ button:disabled,
 	opacity: 0;
 }
 
-.tiles article:nth-child(3n - 1) {
-	width: 30%;
+.tiles article:nth-child(4n - 1),
+.tiles article:nth-child(4n - 2) {
+	width: 60%;
 }
-
-.tiles article:nth-child(3n - 2) {
-	width: 30%;
-}
-
 
 .tiles article:nth-child(8n - 7):before {
 	background-color: #e495da;
